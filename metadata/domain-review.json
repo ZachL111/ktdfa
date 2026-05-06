@@ -1,0 +1,73 @@
+{
+  "repo": "ktdfa",
+  "language": "Kotlin",
+  "category": "Algorithms",
+  "goal": "Minimize deterministic finite automata with partition explanations.",
+  "review_model": {
+    "terms": [
+      "input width",
+      "search depth",
+      "boundary pressure",
+      "complexity"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "input width",
+      "signal": 43,
+      "slack": 37,
+      "drag": 13,
+      "confidence": 60,
+      "score": 144,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "search depth",
+      "signal": 69,
+      "slack": 27,
+      "drag": 13,
+      "confidence": 73,
+      "score": 199,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "boundary pressure",
+      "signal": 49,
+      "slack": 42,
+      "drag": 27,
+      "confidence": 89,
+      "score": 148,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "complexity",
+      "signal": 59,
+      "slack": 45,
+      "drag": 23,
+      "confidence": 68,
+      "score": 162,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "input width",
+      "signal": 68,
+      "slack": 23,
+      "drag": 12,
+      "confidence": 75,
+      "score": 198,
+      "lane": "ship"
+    }
+  ]
+}
